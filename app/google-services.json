@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "536565517749",
+    "firebase_url": "https://kfitapp-d9e77.firebaseio.com",
+    "project_id": "kfitapp-d9e77",
+    "storage_bucket": "kfitapp-d9e77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:536565517749:android:8d204d5696cc803b",
+        "android_client_info": {
+          "package_name": "com.example.xiaochen.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "536565517749-4153ergcsrdeu391oh60gi9k7a9uf142.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.xiaochen.app",
+            "certificate_hash": "67550bc283f131b99aa29ff6277b5d4806818120"
+          }
+        },
+        {
+          "client_id": "536565517749-hr84t7k4qqj75ehira0c1vfi2kimol16.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuP_8_jLm3AlaFbGf1bXbrslEq6hUnDT4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "536565517749-hr84t7k4qqj75ehira0c1vfi2kimol16.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
