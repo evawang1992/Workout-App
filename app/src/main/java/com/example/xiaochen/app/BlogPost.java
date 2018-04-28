@@ -5,7 +5,7 @@ import com.google.firebase.firestore.ServerTimestamp;
 
 import java.util.Date;
 
-public class BlogPost extends BlogPostId {
+public class BlogPost {
 
     public String user_id, image_url, desc, image_thumb;
     public Date timestamp;
