@@ -2,6 +2,7 @@ package com.example.xiaochen.app;
 
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -19,7 +20,9 @@ public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapte
     }
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.blog_list_item,parent,false);
+        return new ViewHolder(view);
     }
 
     @Override
@@ -31,6 +34,7 @@ public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapte
 
     @Override
     public int getItemCount() {
+
         return blog_list.size();
     }
 
@@ -49,6 +53,7 @@ public class BlogRecyclerAdapter extends RecyclerView.Adapter<BlogRecyclerAdapte
         public void setDescText(String text){
 
             descView = mView.findViewById(R.id.blog_desc);
+            descView.setText(text);
         }
     }
 }

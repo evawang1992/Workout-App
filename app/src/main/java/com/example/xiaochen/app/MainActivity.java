@@ -45,24 +45,15 @@ public class MainActivity extends AppCompatActivity {
 
         mainToolbar = (Toolbar)findViewById(R.id.main_toolbar);
 
-
-
-
         setSupportActionBar(mainToolbar);
         getSupportActionBar().setTitle("Community");
+
         mainbottomNav = findViewById(R.id.mainBottomNav);
 
-        addPostBtn = findViewById(R.id.add_post_btn);
-        addPostBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent newPostIntent = new Intent(MainActivity.this,NewPostActivity.class);
-                startActivity(newPostIntent);
-            }
-        });
 
 //        FRAGMENT
         homeFragment = new HomeFragment();
+        replaceFragment(homeFragment);
         mainbottomNav.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -74,6 +65,15 @@ public class MainActivity extends AppCompatActivity {
                         default:
                             return false;
                }
+            }
+        });
+
+        addPostBtn = findViewById(R.id.add_post_btn);
+        addPostBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent newPostIntent = new Intent(MainActivity.this,NewPostActivity.class);
+                startActivity(newPostIntent);
             }
         });
     }
